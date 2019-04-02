@@ -1,0 +1,8 @@
+Name: Group Share Button;
+Version: 1.0.0;
+Support Core: 16.17.0;
+Parent Addon: groups;
+Description: В группах добавит кнопки поделиться и в отдельной записи групп;
+Author: Владимир Дружаев (Otshelnik-Fm);
+Author URI: https://otshelnik-fm.ru/;
+Add-on URI: https://codeseller.ru/products/group-share-button/;
