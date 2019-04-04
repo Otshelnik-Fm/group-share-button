@@ -61,10 +61,10 @@
     text-decoration: none !important;
 }
 .gsb_other {
+    display: flex;
     font-size: 16px;
     margin: 6px 0 12px;
     width: 100%;
-    display: flex;
 }
 .gsb_other:not(.gsb_two){
     justify-content: center;
@@ -77,8 +77,8 @@
     align-items: center;
     display: flex;
     justify-content: center;
-    width: 100%;
     padding: 6px 12px;
+    width: 100%;
 }
 .gsb_other .add-bookmark:hover,
 .gsb_share_box .gsb_copy:hover {
