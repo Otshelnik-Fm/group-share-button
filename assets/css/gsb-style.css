@@ -25,6 +25,9 @@
     width: 330px;
     z-index: 1;
 }
+.gtr_post_footer > div:last-child .gsb_share_hidden {
+    margin-right: calc(50% - 100px);
+}
 .gsb_share:hover .gsb_share_hidden {
     box-shadow: 11px 13px 11px -15px #aaa,0 0 1px 1px #ddd;
     opacity: 1;
@@ -109,6 +112,9 @@
 @media screen and (max-width:600px) {
     .gsb_share_hidden {
         margin-right: calc(50% - 90px);
+    }
+    .gtr_post_footer > div:last-child .gsb_share_hidden {
+        margin-right: calc(50% - 50px);
     }
 }
 @media screen and (max-width:480px) {
