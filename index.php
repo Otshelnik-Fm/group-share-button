@@ -55,3 +55,18 @@ function gsb_share_in_single_post( $content ) {
 
     return $content;
 }
+
+function gsb_bookmarks() {
+    if ( ! is_user_logged_in() || ! rcl_exist_addon( 'bookmarks' ) || ! is_singular( 'post-group' ) )
+        return;
+
+    global $post;
+    $out = '<div class="gsb_bookmark">';
+    $out .= '<a href="#" class="add-bookmark" title="В закладки" data-post="' . $post->ID . '">';
+    $out .= '<i class="rcli fa-bookmark-o" aria-hidden="true"></i>';
+    $out .= '<span>В закладки</span>';
+    $out .= '</a>';
+    $out .= '</div>';
+
+    echo $out;
+}
