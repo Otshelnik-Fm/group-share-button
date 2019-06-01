@@ -21,8 +21,6 @@ $ok_url  = 'https://connect.ok.ru/offer?url=' . $link;
 $tw_url  = 'https://twitter.com/intent/tweet?text=' . $title . ' ' . $link;
 $mr_url  = 'https://connect.mail.ru/share?url=' . $link;
 $pin_url = 'https://pinterest.com/pin/create/button/?url=' . $link;
-
-$class_two = (is_user_logged_in()) ? 'gsb_two' : '';
 ?>
 
 <div class="gsb_share_box">
@@ -54,14 +52,11 @@ $class_two = (is_user_logged_in()) ? 'gsb_two' : '';
         <i class="rcli fa-pinterest" aria-hidden="true"></i>
     </a>
 
-    <div class="gsb_other <?php echo $class_two; ?>">
-        <div class="gsb_link">
-            <a class="gsb_copy" title="Скопировать ссылку в буфер" href="javascript: void(0)" rel="nofollow noopener">
-                <i class="rcli fa-files-o" aria-hidden="true" title="Копировать ссылку"></i>
-                <span>Копировать ссылку</span>
-            </a>
-            <input class="gsb_link_copy" value="<?php echo $link; ?>" style="position:absolute;z-index:-999;opacity:0;">
-        </div>
-        <?php echo gsb_bookmarks(); ?>
+    <div class="gsb_other">
+        <a class="gsb_copy" title="Скопировать ссылку в буфер" href="javascript: void(0)" onclick="gsbCopy( this );return false;" rel="nofollow noopener">
+            <i class="rcli fa-files-o" aria-hidden="true" title="Копировать ссылку"></i>
+            <span>Копировать ссылку</span>
+        </a>
+        <input class="gsb_link_copy" value="<?php echo $link; ?>" style="position:absolute;z-index:-999;opacity:0;height:0;">
     </div>
 </div>
