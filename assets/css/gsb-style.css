@@ -1,5 +1,5 @@
 .gsb_share {
-    color: #ccc;
+    color: #959595 !important;
     cursor: pointer;
     font-size: 18px;
     line-height: 18px;
@@ -7,9 +7,6 @@
     position: relative;
     text-align: center;
     width: 10px;
-}
-.gsb_share:hover {
-    color: #777;
 }
 .gsb_share_hidden {
     background: #fff;

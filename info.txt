@@ -1,8 +1,8 @@
 Name: Group Share Button;
-Version: 1.0.0;
+Version: 1.0;
 Support Core: 16.17.0;
-Parent Addon: groups;
+Parent Addon: groups-theme-replace;
 Description: В группах добавит кнопки поделиться и в отдельной записи групп;
 Author: Владимир Дружаев (Otshelnik-Fm);
-Author URI: https://otshelnik-fm.ru/;
+Author URI: https://otshelnik-fm.ru/?utm_source=free-addons&utm_medium=addon-manager&utm_campaign=group-share-button&utm_content=not-domain&utm_term=home-page;
 Add-on URI: https://codeseller.ru/products/group-share-button/;
