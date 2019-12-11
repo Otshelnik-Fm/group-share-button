@@ -1,6 +1,6 @@
 <?php
 /*
-  v1.0
+  v1.1
   Шаблон дополнения Group Share Button.
   Шаблон для показа кнопок поделиться в соцсетях
   Этот шаблон можно скопировать в папку реколл шаблонов по пути: ваш-сайт/wp-content/wp-recall/templates/
@@ -18,7 +18,7 @@ $title = get_the_title();
 $fb_url  = 'https://www.facebook.com/sharer.php?u=' . $link;
 $vk_url  = 'https://vkontakte.ru/share.php?url=' . $link;
 $ok_url  = 'https://connect.ok.ru/offer?url=' . $link;
-$tw_url  = 'https://twitter.com/intent/tweet?text=' . $title . ' ' . $link;
+$tw_url  = 'https://twitter.com/intent/tweet?url=' . $link . '&text=' . $title;
 $mr_url  = 'https://connect.mail.ru/share?url=' . $link;
 $pin_url = 'https://pinterest.com/pin/create/button/?url=' . $link;
 ?>
